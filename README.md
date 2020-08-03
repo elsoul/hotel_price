@@ -42,16 +42,16 @@ $ gem install hotel_price
 ## Usage
 Initialize Agent Scraper with agent's name and browser mode.
 
-You can choose browser mode below;
-:chrome
-:firefox
-:firefox_remote_capabilities (remote_url: "http://hub:4444/wd/hub")
-
+You can choose browser mode below;<br>
+:chrome<br>
+:firefox<br>
+:firefox_remote_capabilities (remote_url: "http://hub:4444/wd/hub")<br>
+<br>
 Agent Availability and Agent Name (at August 2020)
 1. Rakuten Travel -> Rakuten
 2. Jalan          -> Jalan
-3. Booking.com    -> Booking
-4. Expedia        -> Expedia
+3. Expedia        -> Expedia
+4. Booking.com    -> Booking
 5. Agoda          -> Agoda
 
 
