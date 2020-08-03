@@ -1,5 +1,4 @@
 require_relative "./rakuten/rakuten_api"
-require_relative "./rakuten/rakuten_console"
 require_relative "./rakuten/rakuten_scraper"
 
 module HotelPrice

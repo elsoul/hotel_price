@@ -30,25 +30,56 @@ gem "hotel_price"
 And then execute:
 
 ```bash
-    $ bundle
+$ bundle
 ```
 
 Or install it yourself as:
 
 ```bash
-    $ gem install hotel_price
+$ gem install hotel_price
 ```
 
 ## Usage
-Argments : `agent_hotel_id`, `YYYY-MM-DD`, `adult_numss`
+Initialize Agent Scraper with agent's name and browser mode.
+
+You can choose browser mode below;
+:chrome
+:firefox
+:firefox_remote_capabilities (remote_url: "http://hub:4444/wd/hub")
+
+Agent Availability and Agent Name (at August 2020)
+1. Rakuten Travel -> Rakuten
+2. Jalan          -> Jalan
+3. Booking.com    -> Booking
+4. Expedia        -> Expedia
+5. Agoda          -> Agoda
+
+
+Argments : `agent_hotel_id`, `YYYY-MM-DD`, `adult_nums`
+
+`.get_price` method will run web crawler and return minimum price.
+
+You can get `agent_hotel_id` from each agent's Official Website.
 
 ```ruby
 scraper = HotelPrice::[AgentName]::[AgentName]Scraper.new(:chrome)
 scraper.get_price(agent_hotel_id, checkin_date, adult_nums)
 ```
 
+Sample Response
+```ruby
+{
+	:date => "2020-08-03",
+ 	:min_price => 5023,
+ 	:hotel_name => "相鉄フレッサイン新橋烏森口（旧：ホテルサンルート新橋）",
+ 	:room_name => "シングル【禁煙】12.7平米120センチ幅シモンズ社製ベッド",
+ 	:plan_name => "NEW 【楽天限定2020】スペシャルサマープラン＜食事なし＞"
+}
+```
 
-#### Rakuten Travel Scraper
+### Rakuten Travel Scraper
+Official Website
+[https://travel.rakuten.co.jp/](https://travel.rakuten.co.jp/)
 
 ```ruby
 scraper = HotelPrice::Rakuten::RakutenScraper.new(:chrome)
@@ -59,7 +90,9 @@ scraper.get_price(agent_hotel_id, checkin_date, adult_nums)
 ```
 
 
-#### Jalan Scraper
+### Jalan Scraper
+Official Website
+[https://www.jalan.net/](https://www.jalan.net/)
 
 ```ruby
 scraper = HotelPrice::Jalan::JalanScraper.new(:chrome)
@@ -71,6 +104,8 @@ scraper.get_price(agent_hotel_id, checkin_date, adult_nums)
 
 
 ### Expedia Scraper
+Official Website
+[https://www.expedia.co.jp/](https://www.expedia.co.jp/)
 
 ```ruby
 scraper = HotelPrice::Expedia::ExpediaScraper.new(:chrome)
@@ -81,7 +116,9 @@ scraper.get_price(agent_hotel_id, checkin_date, adult_nums)
 ```
 
 
-#### Booking.com Scraper
+### Booking.com Scraper
+Official Website
+[http://booking.com/](http://booking.com/)
 
 ```ruby
 scraper = HotelPrice::Booking::BookingScraper.new(:chrome)
@@ -92,7 +129,9 @@ scraper.get_price(agent_hotel_id, checkin_date, adult_nums)
 ```
 
 
-#### Agoda Scraper
+### Agoda Scraper
+Official Website
+[https://www.agoda.com/](https://www.agoda.com/)
 
 ```ruby
 scraper = HotelPrice::Agoda::AgodaScraper.new(:chrome)

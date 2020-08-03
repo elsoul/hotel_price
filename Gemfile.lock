@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    hotel_price (0.5.9)
+    hotel_price (0.6.1)
       activesupport (~> 6.0.2.2)
       json (~> 2.3.1)
       nokogiri (~> 1.10.9)
