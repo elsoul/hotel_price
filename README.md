@@ -49,13 +49,13 @@ You can choose browser mode below;<br>
 (remote_url: "http://hub:4444/wd/hub")<br>
 
 <br>
-Agent Availability and Agent Name (at August 2020)
-1. Rakuten Travel -> Rakuten
-2. Jalan          -> Jalan
-3. Expedia        -> Expedia
-4. Booking.com    -> Booking
-5. Agoda          -> Agoda
-
+Agent Availability and Agent Name (at August 2020)<br>
+1. Rakuten Travel -> Rakuten<br>
+2. Jalan          -> Jalan<br>
+3. Expedia        -> Expedia<br>
+4. Booking.com    -> Booking<br>
+5. Agoda          -> Agoda<br>
+<br><br>
 
 Argments : `agent_hotel_id`, `YYYY-MM-DD`, `adult_nums`
 
@@ -82,7 +82,7 @@ Sample Response
 ```
 
 ### Rakuten Travel Scraper
-Official Website
+Official Website<br>
 [https://travel.rakuten.co.jp/](https://travel.rakuten.co.jp/)
 
 ```ruby
@@ -95,7 +95,7 @@ scraper.get_price(agent_hotel_id, checkin_date, adult_nums)
 
 
 ### Jalan Scraper
-Official Website
+Official Website<br>
 [https://www.jalan.net/](https://www.jalan.net/)
 
 ```ruby
@@ -108,7 +108,7 @@ scraper.get_price(agent_hotel_id, checkin_date, adult_nums)
 
 
 ### Expedia Scraper
-Official Website
+Official Website<br>
 [https://www.expedia.co.jp/](https://www.expedia.co.jp/)
 
 ```ruby
@@ -121,7 +121,7 @@ scraper.get_price(agent_hotel_id, checkin_date, adult_nums)
 
 
 ### Booking.com Scraper
-Official Website
+Official Website<br>
 [http://booking.com/](http://booking.com/)
 
 ```ruby
@@ -134,7 +134,7 @@ scraper.get_price(agent_hotel_id, checkin_date, adult_nums)
 
 
 ### Agoda Scraper
-Official Website
+Official Website<br>
 [https://www.agoda.com/](https://www.agoda.com/)
 
 ```ruby
