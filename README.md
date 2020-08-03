@@ -1,4 +1,4 @@
-[![HotelPrice](https://firebasestorage.googleapis.com/v0/b/el-quest.appspot.com/o/mediaLibrary%2F1589293505170_rakuten-shoken.jpg?alt=media&token=f86b6870-fd3f-42aa-805d-db35cb53a9b6)](https://rubygems.org/gems/hotel_price/)
+[![HotelPrice](https://firebasestorage.googleapis.com/v0/b/el-quest.appspot.com/o/mediaLibrary%2F1574151922089_elsoul.png?alt=media&token=bbbcb9a4-a226-4c68-bdab-6310a9af4b02)](https://rubygems.org/gems/hotel_price/)
 
 <p align="center">
 
@@ -79,11 +79,11 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/el-fudo/hotel_price. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/elsoul/hotel_price. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+The gem is available as open source under the terms of the [Apache-2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
 
 ## Code of Conduct
 
