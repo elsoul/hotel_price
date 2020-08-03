@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require "hotel_price"
+
+puts HotelPrice.rakuten_travel
