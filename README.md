@@ -1,3 +1,6 @@
+# Hotel Price
+This gem provides minimum price of Booking Price. 
+
 <p align="center">
 
   <a aria-label="Ruby logo" href="https://el-soul.com">
@@ -15,8 +18,6 @@
     <img alt="" src="https://badgen.net/badge/license/Apache/blue">
   </a>
 </p>
-# HotelPrice
-This Gem is made for ppl who work at travel industry
 
 ## Installation
 
