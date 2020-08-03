@@ -6,7 +6,7 @@ Style/AndOr:
 
 Style/ClassAndModuleChildren:
   Enabled: false
-  
+
 Style/AsciiComments:
   Enabled: false
 
@@ -67,6 +67,7 @@ Style/MissingElse:
 Style/StringHashKeys:
   Exclude:
     - "spec/queries/*.rb"
+    - "*.gemspec"
 
 Style/GuardClause:
   MinBodyLength: 5
