@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Fumitake Kawasaki", "James Neve"]
   spec.email         = ["fumitake.kawasaki@el-soul.com", "jamesoneve@gmail.com"]
 
-  spec.summary       = "Scraping Library to get world hotel price"
-  spec.description   = "Empower World Travel Information Technology "
+  spec.summary       = "Webcrawler for checking booking price of travel agencies."
+  spec.description   = "Webcrawler for checking booking price of travel agencies."
   spec.homepage      = "https://github.com/elsoul/hotel_price"
   spec.license       = "Apache-2.0"
   spec.metadata = { "source_code_uri" => "https://github.com/elsoul/hotel_price" }

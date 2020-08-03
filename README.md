@@ -1,5 +1,5 @@
 # Hotel Price
-Webcrawler for checking booking price of travel agencies.
+WebCrawler for checking booking price of travel agencies.
 
 <p align="center">
 
@@ -40,33 +40,66 @@ Or install it yourself as:
 ```
 
 ## Usage
-
-### Rakuten Travel
-
-#### Rakuten API
-Initialize with `rakuten_hotel_id` and `Rakuten Travel API key`
-Rakuten Travel API Reference : https://webservice.rakuten.co.jp/api/simplehotelsearch/
-
+Argments : `agent_hotel_id`, `YYYY-MM-DD`, `adult_numss`
 
 ```ruby
-hotel = HotelPrice::Rakuten::RakutenAPI.new(
-  rakuten_hotel_id: "128552",
-  rakuten_api_key: "api_key"
-)
-```
-
-Get Hotel Info
-
-```ruby
-puts hotel.hotel_info
+scraper = HotelPrice::[AgentName]::[AgentName]Scraper.new(:chrome)
+scraper.get_price(agent_hotel_id, checkin_date, adult_nums)
 ```
 
 
-### RakutenScraper
-Argments : `rakuten_hotel_id`, `YYYY-MM-DD`, `adult_nums`
+#### Rakuten Travel Scraper
 
 ```ruby
-HotelPrice::Rakuten::RakutenScraper.get_price("128552", (Date.today + 45.day).to_s, 1)
+scraper = HotelPrice::Rakuten::RakutenScraper.new(:chrome)
+agent_hotel_id = "128552" # e.g 料理旅館 富久潮
+checkin_date = (Date.today + 30.day).to_s
+adult_nums = 1
+scraper.get_price(agent_hotel_id, checkin_date, adult_nums)
+```
+
+
+#### Jalan Scraper
+
+```ruby
+scraper = HotelPrice::Jalan::JalanScraper.new(:chrome)
+agent_hotel_id = "366371" # e.g　相鉄ホテル
+checkin_date = (Date.today + 30.day).to_s
+adult_nums = 1
+scraper.get_price(agent_hotel_id, checkin_date, adult_nums)
+```
+
+
+### Expedia Scraper
+
+```ruby
+scraper = HotelPrice::Expedia::ExpediaScraper.new(:chrome)
+agent_hotel_id = "Sapporo-Hotels-Hotel-Sunroute-Sapporo.h5224778" # e.g　相鉄ホテル
+checkin_date = (Date.today + 30.day).to_s
+adult_nums = 1
+scraper.get_price(agent_hotel_id, checkin_date, adult_nums)
+```
+
+
+#### Booking.com Scraper
+
+```ruby
+scraper = HotelPrice::Booking::BookingScraper.new(:chrome)
+agent_hotel_id = "sunroute-sapporo" # e.g　相鉄ホテル
+checkin_date = (Date.today + 30.day).to_s
+adult_nums = 1
+scraper.get_price(agent_hotel_id, checkin_date, adult_nums)
+```
+
+
+#### Agoda Scraper
+
+```ruby
+scraper = HotelPrice::Agoda::AgodaScraper.new(:chrome)
+agent_hotel_id = "hotel-sunroute-new-sapporo/hotel/sapporo-jp" # e.g　相鉄ホテル
+checkin_date = (Date.today + 30.day).to_s
+adult_nums = 1
+scraper.get_price(agent_hotel_id, checkin_date, adult_nums)
 ```
 
 
