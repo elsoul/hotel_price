@@ -8,6 +8,6 @@
 /tmp/
 /.envrc
 .idea
-
+.DS_Store
 # rspec failure tracking
 .rspec_status
