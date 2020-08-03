@@ -1,3 +1,22 @@
+[![HotelPrice](https://firebasestorage.googleapis.com/v0/b/el-quest.appspot.com/o/mediaLibrary%2F1589293505170_rakuten-shoken.jpg?alt=media&token=f86b6870-fd3f-42aa-805d-db35cb53a9b6)](https://rubygems.org/gems/hotel_price/)
+
+<p align="center">
+
+  <a aria-label="Ruby logo" href="https://el-soul.com">
+    <img src="https://badgen.net/badge/icon/Made%20by%20ELSOUL?icon=ruby&label&color=black&labelColor=black">
+  </a>
+  <br/>
+
+  <a aria-label="Ruby Gem version" href="https://rubygems.org/gems/hotel_price">
+    <img alt="" src="https://badgen.net/rubygems/v/hotel_price/latest">
+  </a>
+  <a aria-label="Downloads Number" href="https://rubygems.org/gems/hotel_price">
+    <img alt="" src="https://badgen.net/rubygems/dt/hotel_price">
+  </a>
+  <a aria-label="License" href="https://github.com/elsoul/hotel_price/blob/master/LICENSE">
+    <img alt="" src="https://badgen.net/badge/license/MIT/blue">
+  </a>
+</p>
 # HotelPrice
 This Gem is made for ppl who work at travel industry
 
