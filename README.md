@@ -1,5 +1,3 @@
-[![HotelPrice](https://firebasestorage.googleapis.com/v0/b/el-quest.appspot.com/o/mediaLibrary%2F1574151922089_elsoul.png?alt=media&token=bbbcb9a4-a226-4c68-bdab-6310a9af4b02)](https://rubygems.org/gems/hotel_price/)
-
 <p align="center">
 
   <a aria-label="Ruby logo" href="https://el-soul.com">
