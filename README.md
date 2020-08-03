@@ -43,9 +43,11 @@ $ gem install hotel_price
 Initialize Agent Scraper with agent's name and browser mode.
 
 You can choose browser mode below;<br>
-:chrome<br>
-:firefox<br>
-:firefox_remote_capabilities (remote_url: "http://hub:4444/wd/hub")<br>
+`:chrome`<br>
+`:firefox`<br>
+`:firefox_remote_capabilities`<br>
+(remote_url: "http://hub:4444/wd/hub")<br>
+
 <br>
 Agent Availability and Agent Name (at August 2020)
 1. Rakuten Travel -> Rakuten
@@ -57,7 +59,9 @@ Agent Availability and Agent Name (at August 2020)
 
 Argments : `agent_hotel_id`, `YYYY-MM-DD`, `adult_nums`
 
-`.get_price` method will run web crawler and return minimum price.
+`.get_price`
+
+method will run web crawler and return minimum price.
 
 You can get `agent_hotel_id` from each agent's Official Website.
 
