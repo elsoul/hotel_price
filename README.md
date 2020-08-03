@@ -1,5 +1,5 @@
 # Hotel Price
-This gem provides minimum price of Booking Price. 
+Webcrawler for checking booking price of travel agencies.
 
 <p align="center">
 
