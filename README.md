@@ -14,7 +14,7 @@
     <img alt="" src="https://badgen.net/rubygems/dt/hotel_price">
   </a>
   <a aria-label="License" href="https://github.com/elsoul/hotel_price/blob/master/LICENSE">
-    <img alt="" src="https://badgen.net/badge/license/MIT/blue">
+    <img alt="" src="https://badgen.net/badge/license/Apache/blue">
   </a>
 </p>
 # HotelPrice
@@ -75,7 +75,7 @@ HotelPrice::Rakuten::RakutenScraper.get_price("128552", (Date.today + 45.day).to
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `bundle exec rspec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org/gems/hotel_price).
 
 ## Contributing
 

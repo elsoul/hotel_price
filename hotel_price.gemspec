@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary       = "Scraping Library to get world hotel price"
   spec.description   = "Empower World Travel Information Technology "
   spec.homepage      = "https://github.com/elsoul/hotel_price"
-  spec.license       = "MIT"
+  spec.license       = "Apache-2.0"
   spec.metadata = { "source_code_uri" => "https://github.com/elsoul/hotel_price" }
   spec.required_ruby_version = ">= 2.7.0"
   # spec.metadata["allowed_push_host"] = "https://hotel.el-soul.com"
