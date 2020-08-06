@@ -1,4 +1,4 @@
-require 'json'
+require "json"
 
 module HotelPrice::Agoda
   class AgodaAPI
@@ -20,20 +20,20 @@ module HotelPrice::Agoda
       checkout_arg = (t + 1).strftime("%Y-%m-%d")
 
       params = {
-          "criteria": {
-              "additional": {
-                  "currency": "JPY",
-                  "discountOnly": false,
-                  "language": "ja-jp",
-                  "occupancy": {
-                      "numberOfAdult": num_adults,
-                      "numberOfChildren": 0
-                  }
-              },
-              "checkInDate": checkin_arg,
-              "checkOutDate": checkout_arg,
-              "hotelId": [hotel_id]
-          }
+        "criteria": {
+          "additional": {
+            "currency": "JPY",
+            "discountOnly": false,
+            "language": "ja-jp",
+            "occupancy": {
+              "numberOfAdult": num_adults,
+              "numberOfChildren": 0
+            }
+          },
+          "checkInDate": checkin_arg,
+          "checkOutDate": checkout_arg,
+          "hotelId": [hotel_id]
+        }
       }
 
       url = URI.parse(endpoint_url)
@@ -46,10 +46,10 @@ module HotelPrice::Agoda
       end
 
       parsed_body = JSON.parse(res.body)
-      if parsed_body['results'].nil? || parsed_body['results'].empty?
+      if parsed_body["results"].nil? || parsed_body["results"].empty?
         return "No rooms for search criteria - please confirm hotel ID"
       end
-      parsed_body['results'][0]['dailyRate']
+      parsed_body["results"][0]["dailyRate"]
     end
   end
 end

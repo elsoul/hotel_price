@@ -9,7 +9,7 @@ module HotelPrice::Agoda
     end
 
     def get_price(agoda_hotel_id, checkin_date, num_adults)
-      date = DateTime.now.strftime("%Y-%m-%d")
+      date = Time.now.strftime("%Y-%m-%d")
 
       query_string = make_query_string(checkin_date.to_s, num_adults)
       url = "https://www.agoda.com/ja-jp/#{agoda_hotel_id}.html?#{query_string}"

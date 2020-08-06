@@ -14,7 +14,7 @@ RSpec.describe HotelPrice::Jalan::JalanAPI, type: :class do
     it "should get min price" do
       ## Change date or jalan_hotel_id if there is no data.
       params = {
-        checkin_date: (DateTime.now + 45).strftime("%Y%m%d"),
+        checkin_date: (Time.now + 45).strftime("%Y%m%d"),
         breakfast: "",
         adult_num: 1
       }

@@ -47,9 +47,20 @@ You can choose browser mode below;<br>
 `:firefox`<br>
 `:firefox_remote_capabilities`<br>
 (remote_url: "http://hub:4444/wd/hub")<br>
+<br>
+
+### Install Chronium for Chrome browser (Mac Homebrew)
+  `brew cask install chromium`
+
+### Install Geckodriver for Firefox browser
+Download from Mozilla Geckodriver Github<br>
+[https://github.com/mozilla/geckodriver/releases](https://github.com/mozilla/geckodriver/releases)
+<br>
 
 <br>
-Agent Availability and Agent Name (at August 2020)<br>
+
+## Agent Availability and Agent Name (at August 2020)
+<br>
 1. Rakuten Travel -> Rakuten<br>
 2. Jalan          -> Jalan<br>
 3. Expedia        -> Expedia<br>
@@ -58,6 +69,7 @@ Agent Availability and Agent Name (at August 2020)<br>
 <br><br>
 
 Argments : `agent_hotel_id`, `YYYY-MM-DD`, `adult_nums`
+<br>
 
 `.get_price`
 
@@ -70,7 +82,7 @@ scraper = HotelPrice::[AgentName]::[AgentName]Scraper.new(:chrome)
 scraper.get_price(agent_hotel_id, checkin_date, adult_nums)
 ```
 
-Sample Response
+### Sample Response
 ```ruby
 {
 	:date => "2020-08-03",
@@ -162,4 +174,4 @@ The gem is available as open source under the terms of the [Apache-2.0 License](
 
 ## Code of Conduct
 
-Everyone interacting in the HotelPrice project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/el-fudo/hotel_price/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the HotelPrice project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/elsoul/hotel_price/blob/master/CODE_OF_CONDUCT.md).

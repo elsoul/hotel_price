@@ -15,7 +15,7 @@ module HotelPrice::Jalan
 
     def get_min_price params
       url = "http://jws.jalan.net/APIAdvance/StockSearch/V1/?key=#{@config[:jalan_api_key]}&h_id=#{@config[:jalan_hotel_id]}&stay_date=#{params[:checkin_date]}&stay_count=1&adult_num=#{params[:adult_num]}&count=1"
-      doc = Nokogiri::XML(open(url))
+      doc = Nokogiri::XML(url)
       if doc.css("NumberOfResults").text == "0"
         {
           date: DateTime.now.strftime("%Y-%m-%d"),
