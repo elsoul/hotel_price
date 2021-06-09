@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/elsoul/hotel_price"
   spec.license       = "Apache-2.0"
   spec.metadata = { "source_code_uri" => "https://github.com/elsoul/hotel_price" }
-  spec.required_ruby_version = ">= 2.7.0"
+  spec.required_ruby_version = ">= 3.0.0"
   # spec.metadata["allowed_push_host"] = "https://hotel.el-soul.com"
 
   spec.metadata["homepage_uri"] = spec.homepage
@@ -29,11 +29,11 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 2.0"
-  spec.add_development_dependency "rake", ">= 12.3.3"
-  spec.add_development_dependency "rspec", "~> 3.9.0"
-  spec.add_runtime_dependency "activesupport", "~> 6.0.2.2"
-  spec.add_runtime_dependency "json", "~> 2.3.1"
-  spec.add_runtime_dependency "nokogiri", "~> 1.10.9"
+  spec.add_development_dependency "bundler", "~> 2.2.19"
+  spec.add_development_dependency "rake", ">= 13.0.3"
+  spec.add_development_dependency "rspec", "~> 3.10.0"
+  spec.add_runtime_dependency "activesupport", "~> 6.1.3.2"
+  spec.add_runtime_dependency "json", "~> 2.5.1"
+  spec.add_runtime_dependency "nokogiri", "~> 1.11.4"
   spec.add_runtime_dependency "selenium-webdriver", "~> 3.141"
 end
